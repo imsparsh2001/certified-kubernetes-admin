@@ -1,0 +1,5 @@
+kind:
+apiVersion:
+metadata:
+spec:
+template:
