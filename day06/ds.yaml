@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: sample-ds
+spec:
+  selector:
+    matchLabels:
+      app: sample-ds
+  template:
+    metadata:
+      labels:
+        app: sample-ds
+    spec: 
+      containers:
+      - name: my-agent
+        image: nginx
+        ports:
+        - containerPort: 80  
+
+
+

@@ -4,7 +4,7 @@
 kind create cluster --name local
 
 <!-- Create a cluster using a config file -->
-kind create cluster --config clusters.yml --name local
+kind create cluster --config cluster.yaml --name local
 
 <!-- List running Docker containers (Kind runs clusters inside Docker) -->
 docker ps
